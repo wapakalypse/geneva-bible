@@ -1,0 +1,38 @@
+{
+  "ArticlesList": {
+    "description": "Auto imported from components/ArticlesList.vue"
+  },
+  "LazyArticlesList": {
+    "description": "Auto imported from components/ArticlesList.vue"
+  },
+  "Footer": {
+    "description": "Auto imported from components/Footer.vue"
+  },
+  "LazyFooter": {
+    "description": "Auto imported from components/Footer.vue"
+  },
+  "Header": {
+    "description": "Auto imported from components/Header.vue"
+  },
+  "LazyHeader": {
+    "description": "Auto imported from components/Header.vue"
+  },
+  "HeadsList": {
+    "description": "Auto imported from components/HeadsList.vue"
+  },
+  "LazyHeadsList": {
+    "description": "Auto imported from components/HeadsList.vue"
+  },
+  "MapsList": {
+    "description": "Auto imported from components/MapsList.vue"
+  },
+  "LazyMapsList": {
+    "description": "Auto imported from components/MapsList.vue"
+  },
+  "TablesList": {
+    "description": "Auto imported from components/TablesList.vue"
+  },
+  "LazyTablesList": {
+    "description": "Auto imported from components/TablesList.vue"
+  }
+}
