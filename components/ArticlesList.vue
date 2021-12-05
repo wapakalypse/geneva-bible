@@ -10,33 +10,22 @@
 
 <script>
 
-    export default {
-        name: 'Articles',
-        data(){
-            return {
-                title: '',
-                articles: []
-            }
-        },
-        mounted() {
+export default {
 
-            this.getArticles();
-
-        },
-        methods: {
-            getArticles:function () {
-
-                fetch('/articles.json')
-                .then(resp => resp.json())
-                .then(data => {
-
-                    this.articles = data.Articles;
-
-                })
-            }
+    data(){
+        return {
+            articles: []
         }
-
+    },
+    async fetch() {
+        const res = await fetch(process.env.baseUrl + '/articles.json')
+            .then(resp => resp.json())
+            .then(data => {
+                this.articles = data.Articles;
+            })
     }
+
+}
 
 </script>
 

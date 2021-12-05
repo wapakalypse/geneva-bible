@@ -11,28 +11,20 @@
 <script>
 
 export default {
+	
 	data(){
 		return {
 			maps: []
 		}
 	},
-	mounted() {
-
-		this.getMaps();
-
-	},
-	methods: {
-		getMaps:function () {
-
-			fetch('/maps.json')
+    async fetch() {
+		const res = await fetch(process.env.baseUrl + '/maps.json')
 			.then(resp => resp.json())
 			.then(data => {
-
 				this.maps = data.Maps;
-				
 			})
-		}
 	}
+
 }
 
 </script>

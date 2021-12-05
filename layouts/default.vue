@@ -33,7 +33,8 @@ export default {
     //    { rel: 'stylesheet', href: 'https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css' },
     //    { rel: 'stylesheet', href: 'https://fonts.googleapis.com/css2?family=Lato&display=swap' }        
       ]
-    }
+    },
+
 }
 
 </script>
@@ -107,7 +108,7 @@ hr {
 }
 
 #app {
-    background: #e7eeff;
+    background: #eef2fb;
 }
 
 .header {
@@ -214,6 +215,7 @@ hr {
 
 .heads-list_item {
 	margin: .5rem;
+    color: #333;
 }
 
 .current {
@@ -273,6 +275,11 @@ hr {
     transition: .3s;
 }
 
+.img-responsive,
+.content-image {
+    width: 100%;
+}
+
 .content-text p {
     margin: 0 0 1rem;
 }
@@ -327,6 +334,7 @@ hr {
 .item_comment details span {
     display: block;
     padding: .5rem 1rem;
+    color: #333;
 }
 
 .text-non-align {

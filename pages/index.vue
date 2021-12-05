@@ -86,33 +86,30 @@
 
 <script>
 
-export default {
-    name: 'Main',
-    data(){
-        return {
-            title: '',
-            list: []
-        }
-    },
-    mounted() {
-
-        this.getList();
-
-    },
-    methods: {
-        getList:function () {
-
-            fetch('/books.json')
-                .then(resp => resp.json())
-                .then(data => {
-
-                this.list = data.Books;
-
-            })
+    export default {
+        name: 'Main',
+        head() {
+            return {
+                title: 'Женевская Библия онлайн c комментариями. Новый Завет, Ветхий Завет. Статьи, карты, таблицы.',
+                meta: [{ 
+                    hid: 'description', 
+                    name: 'description', 
+                    content: 'Новая Женевская Библия для чтения онлайн c комментариями. Новый Завет, Ветхий Завет. Статьи, карты, таблицы. Geneva Bible.'}],
+            }
+        },
+        data(){
+            return {
+                title: '',
+                list: []
+            }
+        },
+        async fetch() {
+            let id = Number(this.$route.params.id) - 1;
+            const res = await fetch(process.env.baseUrl + '/books.json')
+                .then(res => res.json())
+                    this.list = res.Books;
         }
     }
-
-}
 
 </script>
 

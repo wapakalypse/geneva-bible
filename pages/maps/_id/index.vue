@@ -6,7 +6,7 @@
 
         <div v-html="text" class="content-text text-two-column"></div>
 
-        <img style="width: 100%;" :src="'/maps/m' + $route.params.id + '.png'" />
+        <img class="content-image" :src="'/maps/m' + $route.params.id + '.png'" />
         
 	    <div class="text-two-column">
             <MapsList />
@@ -20,28 +20,29 @@
 
     export default {
         name: 'Map',
-        data(){
+        head() {
             return {
-                id: Number(this.$route.params.id) - 1,
-                title: '',
-                text: []
+                title: 'Карта "' + this.title + '". Женевская Библия онлайн с комментариями',
+                meta: [{ 
+                    hid: 'description', 
+                    name: 'description', 
+                    content: 'Новая Женевская Библия онлайн. Карта "' + this.title + '". Комментарий к карте...'}],
             }
         },
-        mounted() {
-
-            this.getMap();
-
+        data(){
+            return {
+                mapId: null,
+                title: '',
+                text: [],
+            }
         },
-        methods: {
-            getMap:function () {
-
-			    fetch('/maps.json')
-				.then(resp => resp.json())
-				.then(data => {
-                    this.title = data.Maps[this.id].Title;
-                    this.text = data.Maps[this.id].Text;
-			    })
-		    }       
+        async fetch() {
+            let id = Number(this.$route.params.id) - 1;
+            const res = await fetch(process.env.baseUrl + '/maps.json')
+                .then(res => res.json())
+                this.mapId = res.Maps[id].Id;
+                this.title = res.Maps[id].Title;
+                this.text = res.Maps[id].Text;
         }
     }
 

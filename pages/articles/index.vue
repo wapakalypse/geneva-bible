@@ -16,32 +16,15 @@
 
     export default {
         name: 'Articles',
-        data(){
+        head() {
             return {
-                title: '',
-                articles: []
-            }
-        },
-        created() {
-        },
-        mounted() {
-
-            this.getArticles();
-
-        },
-        methods: {
-            getArticles:function () {
-
-                fetch('/articles.json')
-                .then(resp => resp.json())
-                .then(data => {
-
-                    this.articles = data.Articles;
-
-                })
+                title: 'Статьи Женевской Библии онлайн с пояснениями.',
+                meta: [{ 
+                    hid: 'description', 
+                    name: 'description', 
+                    content: 'Полный список богословских и других статей Женевской Библии онлайн с пояснениями. Новая Женевская Библия для чтения онлайн c комментариями.'}],
             }
         }
-
     }
 
 </script>

@@ -6,7 +6,7 @@
 
         <div v-html="text" class="content-text text-two-column"></div>
 
-        <img style="width: 100%;" :src="'/tables/t' + $route.params.id + '.png'" />
+        <img class="content-image" :src="'/tables/t' + $route.params.id + '.png'" />
 
         <div class="text-two-column">
             <TablesList />
@@ -20,30 +20,29 @@
 
     export default {
         name: 'Table',
+        head() {
+            return {
+                title: 'Таблица "' + this.title + '". Женевская Библия онлайн с комментариями',
+                meta: [{ 
+                    hid: 'description', 
+                    name: 'description', 
+                    content: 'Новая Женевская Библия онлайн. Таблица "' + this.title + '". Комментарий к таблице...'}],
+            }
+        },
         data(){
             return {
-                id: Number(this.$route.params.id) - 1,
+                tableId: null,
                 title: '',
                 text: []
             }
         },
-        mounted() {
-
-            this.getTable();
-
-        },
-        methods: {
-            getTable:function () {
-
-			    fetch('/tables.json')
-				.then(resp => resp.json())
-				.then(data => {
-                    this.title = data.Tables[this.id].Title;
-                    this.text = data.Tables[this.id].Text;
-                    console.log(this.title);
-			    })
-
-		    }
+        async fetch() {
+            let id = Number(this.$route.params.id) - 1;
+            const res = await fetch(process.env.baseUrl + '/tables.json')
+                .then(res => res.json())
+                    this.tableId = res.Tables[id].Id;
+                    this.title = res.Tables[id].Title;
+                    this.text = res.Tables[id].Text;
         }
     }
 

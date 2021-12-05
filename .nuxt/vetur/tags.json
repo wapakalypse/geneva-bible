@@ -5,6 +5,12 @@
   "LazyArticlesList": {
     "description": "Auto imported from components/ArticlesList.vue"
   },
+  "Error404": {
+    "description": "Auto imported from components/Error404.vue"
+  },
+  "LazyError404": {
+    "description": "Auto imported from components/Error404.vue"
+  },
   "Footer": {
     "description": "Auto imported from components/Footer.vue"
   },

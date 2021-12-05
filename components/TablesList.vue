@@ -10,32 +10,22 @@
 
 <script>
 
-    export default {
-        name: 'Tables',
-        data(){
-            return {
-                tables: []
-            }
-        },
-        mounted() {
+export default {
 
-            this.getTables();
-
-        },
-        methods: {
-            getTables:function () {
-
-                fetch('/tables.json')
-                .then(resp => resp.json())
-                .then(data => {
-
-                    this.tables = data.Tables;
-
-                })
-            }
-        }
-
+	data(){
+		return {
+			tables: []
+		}
+	},
+    async fetch() {
+        const res = await fetch(process.env.baseUrl + '/tables.json')
+            .then(resp => resp.json())
+            .then(data => {
+                this.tables = data.Tables;
+            })
     }
+    
+}
 
 </script>
 

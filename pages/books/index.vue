@@ -30,33 +30,28 @@
 <script>
 
     export default {
-        name: 'Main',
+        name: 'Books',
+        head() {
+            return {
+                title: 'Список книг Женевской Библии онлайн.',
+                meta: [{ 
+                    hid: 'description', 
+                    name: 'description', 
+                    content: 'Полный список библейских апокрифических книг Женевской Библии онлайн. Новая Женевская Библия c комментариями для чтения онлайн.'}],
+            }
+        },
         data(){
             return {
                 title: '',
                 list: []
             }
         },
-        created() {
-        },
-        mounted() {
-
-            this.getList();
-
-        },
-        methods: {
-            getList:function () {
-
-                fetch('/books.json')
-                    .then(resp => resp.json())
-                    .then(data => {
-
-                    this.list = data.Books;
-
-                })
-            }
+        async fetch() {
+            let id = Number(this.$route.params.id) - 1;
+            const res = await fetch(process.env.baseUrl + '/books.json')
+                .then(res => res.json())
+                    this.list = res.Books;
         }
-
     }
 
 </script>

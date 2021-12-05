@@ -18,29 +18,29 @@
 
     export default {
         name: 'Article',
+        head() {
+            return {
+                title: 'Статья "' + this.title + '". Женевская Библия онлайн с комментариями',
+                meta: [{ 
+                    hid: 'description', 
+                    name: 'description', 
+                    content: 'Новая Женевская Библия онлайн. Статья "' + this.title + '". Читать...'}],
+            }
+        },
         data(){
             return {
-                id: Number(this.$route.params.id) - 1,
+                articleId: null,
                 title: '',
                 text: []
             }
         },
-        mounted() {
-
-            this.getArticle();
-
-
-        },
-        methods: {
-            getArticle:function () {
-
-			    fetch('/articles.json')
-				.then(resp => resp.json())
-				.then(data => {
-                    this.title = data.Articles[this.id].Title; 
-                    this.text = data.Articles[this.id].Text;
-			    })
-		    }
+        async fetch() {
+            let id = Number(this.$route.params.id) - 1;
+            const res = await fetch(process.env.baseUrl + '/articles.json')
+                .then(res => res.json())
+                    this.articleId = res.Articles[id].Id;
+                    this.title = res.Articles[id].Title;
+                    this.text = res.Articles[id].Text;
         }
     }
 

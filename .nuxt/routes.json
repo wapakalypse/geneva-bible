@@ -2,71 +2,71 @@
   {
     "name": "articles",
     "path": "/articles",
-    "component": "/home/wapakalypse/Документы/sitebuilding/bibel/pages/articles/index.vue",
+    "component": "/home/wapakalypse/Документы/sitebuilding/bible/pages/articles/index.vue",
     "chunkName": "pages/articles/index",
-    "_name": "_02608d8d"
+    "_name": "_f2b2860a"
   },
   {
     "name": "books",
     "path": "/books",
-    "component": "/home/wapakalypse/Документы/sitebuilding/bibel/pages/books/index.vue",
+    "component": "/home/wapakalypse/Документы/sitebuilding/bible/pages/books/index.vue",
     "chunkName": "pages/books/index",
-    "_name": "_3c464620"
+    "_name": "_82e6d77c"
   },
   {
     "name": "maps",
     "path": "/maps",
-    "component": "/home/wapakalypse/Документы/sitebuilding/bibel/pages/maps/index.vue",
+    "component": "/home/wapakalypse/Документы/sitebuilding/bible/pages/maps/index.vue",
     "chunkName": "pages/maps/index",
-    "_name": "_675b1be7"
+    "_name": "_7de39b56"
   },
   {
     "name": "tables",
     "path": "/tables",
-    "component": "/home/wapakalypse/Документы/sitebuilding/bibel/pages/tables/index.vue",
+    "component": "/home/wapakalypse/Документы/sitebuilding/bible/pages/tables/index.vue",
     "chunkName": "pages/tables/index",
-    "_name": "_62ba80f5"
+    "_name": "_1c01b3e3"
   },
   {
     "name": "articles-id",
     "path": "/articles/:id",
-    "component": "/home/wapakalypse/Документы/sitebuilding/bibel/pages/articles/_id/index.vue",
+    "component": "/home/wapakalypse/Документы/sitebuilding/bible/pages/articles/_id/index.vue",
     "chunkName": "pages/articles/_id/index",
-    "_name": "_13ee19f8"
+    "_name": "_bcda3b34"
   },
   {
     "name": "books-id",
     "path": "/books/:id",
-    "component": "/home/wapakalypse/Документы/sitebuilding/bibel/pages/books/_id/index.vue",
+    "component": "/home/wapakalypse/Документы/sitebuilding/bible/pages/books/_id/index.vue",
     "chunkName": "pages/books/_id/index",
-    "_name": "_341dffdb"
+    "_name": "_389dbe2d"
   },
   {
     "name": "maps-id",
     "path": "/maps/:id",
-    "component": "/home/wapakalypse/Документы/sitebuilding/bibel/pages/maps/_id/index.vue",
+    "component": "/home/wapakalypse/Документы/sitebuilding/bible/pages/maps/_id/index.vue",
     "chunkName": "pages/maps/_id/index",
-    "_name": "_41e5eb52"
+    "_name": "_73a7ca80"
   },
   {
     "name": "tables-id",
     "path": "/tables/:id",
-    "component": "/home/wapakalypse/Документы/sitebuilding/bibel/pages/tables/_id/index.vue",
+    "component": "/home/wapakalypse/Документы/sitebuilding/bible/pages/tables/_id/index.vue",
     "chunkName": "pages/tables/_id/index",
-    "_name": "_05d01960"
+    "_name": "_dd6fb564"
   },
   {
     "name": "books-id-chapter",
     "path": "/books/:id/:chapter",
-    "component": "/home/wapakalypse/Документы/sitebuilding/bibel/pages/books/_id/_chapter/index.vue",
+    "component": "/home/wapakalypse/Документы/sitebuilding/bible/pages/books/_id/_chapter/index.vue",
     "chunkName": "pages/books/_id/_chapter/index",
-    "_name": "_6899c258"
+    "_name": "_7713ff74"
   },
   {
     "name": "index",
     "path": "/",
-    "component": "/home/wapakalypse/Документы/sitebuilding/bibel/pages/index.vue",
+    "component": "/home/wapakalypse/Документы/sitebuilding/bible/pages/index.vue",
     "chunkName": "pages/index",
-    "_name": "_331b9e55"
+    "_name": "_5e73bb27"
   }
 ]
