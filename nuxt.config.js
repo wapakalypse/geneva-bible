@@ -71,6 +71,6 @@ export default {
   },
   env: {
   //  baseUrl: 'https://a1sport.store/'
-    baseUrl: 'http://localhost:3000'
+    baseUrl: 'http://localhost:3000/'
   }
 }

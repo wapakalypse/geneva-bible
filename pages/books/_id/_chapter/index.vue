@@ -1,6 +1,6 @@
 <template>
 
-	<div class="content">
+	<div class="content" v-if="error404 == false">
 
 		<h1>{{ title }}</h1>
 
@@ -34,6 +34,10 @@
 		
 	</div>
 
+	<div v-else>
+		<Error404 />
+	</div>
+
 </template>
 
 <script>
@@ -58,14 +62,18 @@
 				verses: null,
 				size: '',
 				comments: [],
-				commentShow: true
+				commentShow: true,
+				error404: false
 			}
 		},
 		async fetch() {
 			const res = await fetch(process.env.baseUrl + '/books.json')
 				.then(res => res.json())
-					this.title = res.Books[this.$route.params.id - 1].TitleFull;
-					this.size = res.Books[this.$route.params.id - 1].Size;	
+					if(res.Books[this.$route.params.id - 1] != undefined) {
+						this.title = res.Books[this.$route.params.id - 1].TitleFull;
+						this.size = res.Books[this.$route.params.id - 1].Size;
+					} else
+						this.error404 = true;
 
 			const res2 = await fetch(process.env.baseUrl + '/book/' + this.$route.params.id + '/' + this.$route.params.id + '-' + this.$route.params.chapter + '.json')
 				.then(res2 => res2.json())
@@ -73,6 +81,9 @@
 					this.chapter = res2.chapter_id; 
 					this.verses = res2.verses;
 					this.comments = res2.coments;
+
+				if(this.id == null)
+					this.error404 = true;
 		},
 	/* 	watch: {
 			'$route' (to, from) {

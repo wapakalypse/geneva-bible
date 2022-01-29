@@ -260,6 +260,32 @@ hr {
     border-bottom: 0;
 }
 
+.content-head {
+    margin: 1rem .5rem 2rem;
+    padding: 1rem;
+    background: #f7faff;
+    line-height: 1.7;
+}
+
+.margin-0,
+.margin-1,
+.margin-2,
+.margin-3 {
+    display: block;
+}
+
+.margin-1 {
+    margin-left: 3rem;
+}
+
+.margin-2 {
+    margin-left: 6rem;
+}
+
+.margin-3 {
+    margin-left: 9rem;
+}
+
 .not-book {
     background: #ecf0fb;
     border-radius: 3px;

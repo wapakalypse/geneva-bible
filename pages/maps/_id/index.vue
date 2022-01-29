@@ -1,6 +1,6 @@
 <template>
 
-    <div class="content">
+    <div class="content" v-if="error404 == false">
 
         <h1>{{ title }}</h1>
 
@@ -13,6 +13,10 @@
         </div>
 
     </div>
+
+    <div v-else>
+		<Error404 />
+	</div>
 
 </template>
 
@@ -34,22 +38,20 @@
                 mapId: null,
                 title: '',
                 text: [],
+                error404: false
             }
         },
         async fetch() {
             let id = Number(this.$route.params.id) - 1;
             const res = await fetch(process.env.baseUrl + '/maps.json')
                 .then(res => res.json())
-                this.mapId = res.Maps[id].Id;
-                this.title = res.Maps[id].Title;
-                this.text = res.Maps[id].Text;
+                if(res.Maps[id] != undefined) {
+                    this.mapId = res.Maps[id].Id;
+                    this.title = res.Maps[id].Title;
+                    this.text = res.Maps[id].Text;
+                } else
+					this.error404 = true;
         }
     }
 
 </script>
-
-<style>
-
-
-
-</style>
