@@ -110,7 +110,7 @@
             },
             getVerse:function () {
                 
-                fetch('/book/' + this.search_books + '/' + this.search_books + '-' + this.search_chapters + '.json')
+                fetch('/books/' + this.search_books + '/' + this.search_books + '-' + this.search_chapters + '.json')
                     .then(resp => resp.json())
                     .then(data => {
 

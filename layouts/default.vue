@@ -363,6 +363,19 @@ hr {
     color: #333;
 }
 
+.item_link {
+    font-size: 10pt;
+    text-align: right;
+    display: block;
+    margin: .3rem;
+}
+
+.item_link_content_el {
+    padding: 0 0.3rem;
+    border-right: 1px solid #cdcdcd;
+    color: #0872db;
+}
+
 .text-non-align {
     text-align: initial;
 }
