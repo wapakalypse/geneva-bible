@@ -2,71 +2,71 @@
   {
     "name": "articles",
     "path": "/articles",
-    "component": "/home/wapakalypse/Документы/sitebuilding/genbible-test/pages/articles/index.vue",
+    "component": "/home/wapakalypse/Документы/sitebuilding/genbible/test/pages/articles/index.vue",
     "chunkName": "pages/articles/index",
-    "_name": "_eea05198"
+    "_name": "_ebeda31c"
   },
   {
     "name": "books",
     "path": "/books",
-    "component": "/home/wapakalypse/Документы/sitebuilding/genbible-test/pages/books/index.vue",
+    "component": "/home/wapakalypse/Документы/sitebuilding/genbible/test/pages/books/index.vue",
     "chunkName": "pages/books/index",
-    "_name": "_a7d166ae"
+    "_name": "_1eb96e2b"
   },
   {
     "name": "maps",
     "path": "/maps",
-    "component": "/home/wapakalypse/Документы/sitebuilding/genbible-test/pages/maps/index.vue",
+    "component": "/home/wapakalypse/Документы/sitebuilding/genbible/test/pages/maps/index.vue",
     "chunkName": "pages/maps/index",
-    "_name": "_f2b15de4"
+    "_name": "_eb4c1168"
   },
   {
     "name": "tables",
     "path": "/tables",
-    "component": "/home/wapakalypse/Документы/sitebuilding/genbible-test/pages/tables/index.vue",
+    "component": "/home/wapakalypse/Документы/sitebuilding/genbible/test/pages/tables/index.vue",
     "chunkName": "pages/tables/index",
-    "_name": "_4063ef48"
+    "_name": "_7d1fd1cc"
   },
   {
     "name": "articles-id",
     "path": "/articles/:id",
-    "component": "/home/wapakalypse/Документы/sitebuilding/genbible-test/pages/articles/_id/index.vue",
+    "component": "/home/wapakalypse/Документы/sitebuilding/genbible/test/pages/articles/_id/index.vue",
     "chunkName": "pages/articles/_id/index",
-    "_name": "_2ebb8fc2"
+    "_name": "_62e1c05d"
   },
   {
     "name": "books-id",
     "path": "/books/:id",
-    "component": "/home/wapakalypse/Документы/sitebuilding/genbible-test/pages/books/_id/index.vue",
+    "component": "/home/wapakalypse/Документы/sitebuilding/genbible/test/pages/books/_id/index.vue",
     "chunkName": "pages/books/_id/index",
-    "_name": "_77b7eb14"
+    "_name": "_bced08d4"
   },
   {
     "name": "maps-id",
     "path": "/maps/:id",
-    "component": "/home/wapakalypse/Документы/sitebuilding/genbible-test/pages/maps/_id/index.vue",
+    "component": "/home/wapakalypse/Документы/sitebuilding/genbible/test/pages/maps/_id/index.vue",
     "chunkName": "pages/maps/_id/index",
-    "_name": "_6f95960e"
+    "_name": "_6ce2e792"
   },
   {
     "name": "tables-id",
     "path": "/tables/:id",
-    "component": "/home/wapakalypse/Документы/sitebuilding/genbible-test/pages/tables/_id/index.vue",
+    "component": "/home/wapakalypse/Документы/sitebuilding/genbible/test/pages/tables/_id/index.vue",
     "chunkName": "pages/tables/_id/index",
-    "_name": "_35739547"
+    "_name": "_45d41505"
   },
   {
     "name": "books-id-chapter",
     "path": "/books/:id/:chapter",
-    "component": "/home/wapakalypse/Документы/sitebuilding/genbible-test/pages/books/_id/_chapter/index.vue",
+    "component": "/home/wapakalypse/Документы/sitebuilding/genbible/test/pages/books/_id/_chapter/index.vue",
     "chunkName": "pages/books/_id/_chapter/index",
-    "_name": "_1f5b3182"
+    "_name": "_c2e36e06"
   },
   {
     "name": "index",
     "path": "/",
-    "component": "/home/wapakalypse/Документы/sitebuilding/genbible-test/pages/index.vue",
+    "component": "/home/wapakalypse/Документы/sitebuilding/genbible/test/pages/index.vue",
     "chunkName": "pages/index",
-    "_name": "_d222e664"
+    "_name": "_9fbf1060"
   }
 ]

@@ -108,7 +108,7 @@ hr {
 }
 
 #app {
-    background: #eef2fb;
+    background: #f5f5f5;
 }
 
 .header {
@@ -228,9 +228,9 @@ hr {
     margin: 3rem auto;
     padding: 3rem;
     background: #fbfbfb;
-    border-radius: 3px;
+    border-radius: 20px;
     box-sizing: border-box;
-    box-shadow: 1px 1px 4px 1px #b1b1b1;
+    box-shadow: 10px 10px 20px #e1e1e1, -10px -10px 20px #e5e5e5;
 }
 
 .content-bible {
@@ -251,13 +251,17 @@ hr {
 }
 
 .content-bible-list li {
-    margin: .3rem 0;
-    padding: .5rem;
     border-bottom: 1px solid #e5e5e5;
 }
 
 .content-bible-list li:last-child {
     border-bottom: 0;
+}
+
+.content-bible-list li a {
+    display: block;
+    margin: .3rem 0;
+    padding: .5rem;
 }
 
 .content-head {
@@ -374,6 +378,7 @@ hr {
     padding: 0 0.3rem;
     border-right: 1px solid #cdcdcd;
     color: #0872db;
+    cursor: pointer;
 }
 
 .text-non-align {
