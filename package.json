@@ -11,8 +11,11 @@
     "serve": "nuxt serve"
   },
   "dependencies": {
+    "@nuxtjs/workbox": "^3.0.0-beta.16",
     "glob": "^7.2.0",
     "nuxt": "^2.13.0"
   },
-  "devDependencies": {}
+  "devDependencies": {
+    "@nuxtjs/pwa": "^3.3.5"
+  }
 }

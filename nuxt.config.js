@@ -44,7 +44,12 @@ export default {
   /*
   ** Nuxt.js dev-modules
   */
+  modules: [
+    // https://go.nuxtjs.dev/pwa
+    "@nuxtjs/pwa",
+  ],
   buildModules: [
+      '@nuxtjs/pwa',
   ],
   /*
   ** Nuxt.js modules
@@ -70,7 +75,12 @@ export default {
     }
   },
   env: {
-  //  baseUrl: 'https://a1sport.store/'
     baseUrl: 'http://localhost:3000/'
+  },
+  pwa: {
+    icon: false, // disables the icon module
+    workbox: {
+    /* workbox options */
+  	}
   }
 }
