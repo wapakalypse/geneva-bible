@@ -75,7 +75,7 @@ export default {
     }
   },
   env: {
-    baseUrl: 'http://bible.ru.net'
+    baseUrl: 'https://bible.ru.net'
   },
   pwa: {
     icon: false, // disables the icon module
