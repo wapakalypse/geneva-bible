@@ -75,7 +75,7 @@ export default {
     }
   },
   env: {
-    baseUrl: 'http://localhost:3000/'
+    baseUrl: 'http://localhost:3000'
   },
   pwa: {
     icon: false, // disables the icon module
